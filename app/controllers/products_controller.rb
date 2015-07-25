@@ -1,6 +1,7 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
 
+  # this is a comment 
   # GET /products
   # GET /products.json
   def index
