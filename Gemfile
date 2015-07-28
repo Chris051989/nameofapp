@@ -9,11 +9,6 @@ group :development, :test do
   gem 'sqlite3'
 end
 
-# Add the pg gem in the production environment group und 
-group :production do
-  gem 'pg'
-end
-
 # Add rails 12_factor to the production environment 
 group :production do
   gem 'rails_12factor'
