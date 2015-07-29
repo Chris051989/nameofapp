@@ -1,3 +1,49 @@
 
+table{
+   border: 1px solid black;
+}
+
+table th {font-size:
+1.2em;
+}
+
+table {
+    width: 100%;
+}
+
+table td {padding: 15px;
+}
+
+th {
+    height: 50px;
+}
+
+th {
+    background-color: white;
+    color: black;
+    opacity: 0.7;
+}
+
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*Typography*/
+
+h1,
+h2,
+h3,
+th,
+td,
+tr {
+	font-family: Quicksand, Helvetica, sans-serif;
+}
+ 
+p,
+a,
+li {
+ 	font-family: Crimson Text, Palatino, serif;
+ }
+
+/*Typography ends here*/
+
+

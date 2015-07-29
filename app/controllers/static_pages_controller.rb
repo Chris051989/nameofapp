@@ -12,5 +12,11 @@ class StaticPagesController < ApplicationController
 
 	def contact
 	end
+
+# Display three products from your database
+
+def landing_page
+  @products = Product.limit(3)
 end
 
+end
