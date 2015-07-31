@@ -5,9 +5,20 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   
+ 
+# code for entering the search field 
   def index
+    #conditional to see if the search term is present 
     if params[:q]
       search_term = params[:q]
+
+ #  we can’t expect users to enter a name exactly as it is spelled 
+ # in the database, for this SQL has a useful matching operator called LIKE
+ # and it allows you to include a “wildcard” character (%) to indicate that 
+ # the matching term may be part of a longer string. 
+ # So we need to put percentage characters around our search_term string. 
+ # In order for us to do this, we need to use the string substitution method 
+ # that you learned in the Ruby primer, with the # character.     
       @products = Product.where("name LIKE ?", "%#{search_term}%")
     else
       @products = Product.all
