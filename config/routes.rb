@@ -7,8 +7,13 @@ Rails.application.routes.draw do
   get 'static_pages/contact'
 
   get 'static_pages/index'
-  
+
   get 'static_pages/landing_page'
+
+# Generate template for Email
+  post 'static_pages/thank_you'
+
+  
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

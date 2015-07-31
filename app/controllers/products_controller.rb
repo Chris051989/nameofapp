@@ -55,7 +55,6 @@ class ProductsController < ApplicationController
     end
   end
 
-
   # PATCH/PUT /products/1
   # PATCH/PUT /products/1.json
   def update
