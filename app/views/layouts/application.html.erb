@@ -14,7 +14,10 @@
 	</head>
 	
 	<body>
-	 <!--navbar starts here-->
+
+    <!--Add Flash Notice Tags - the block will display a welcoming message when you are signing in -->
+        
+   	 <!--navbar starts here-->
     <nav>
         <div class="navbar navbar-inverse navbar-fixed-top" role "Navigation" id="navbar">
             <div class="container-fluid">
@@ -44,16 +47,30 @@
                         <li><%= link_to "products", products_path %></li>
                         <li><%= link_to "about", static_pages_about_path %></li>
                         <li><%= link_to "contact", static_pages_contact_path %></li>
+                         <!-- add login and logout button for user-->
+                          <% if user_signed_in? %>
+                          <li>
+                          <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>        
+                          </li>
+                        <% else %>
+                          <li>
+                          <%= link_to('Login', new_user_session_path)  %>  
+                          </li>
+                        <% end %>
                     </ul>
+                    
+          
                 </div>
                 <!--end navbar-collapse-->
             </div>
             <!--end container fluid-->
+           
         </div>
         <!--end navbar-->
     </nav>
     <!--Navbar ends here-->
-		
+
+
 	<%= image_tag("strand2.jpg") %>
 
 	       <div class="container fluid">

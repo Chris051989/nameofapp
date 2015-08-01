@@ -50,6 +50,11 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'coffee-script-source', '1.8.0'
 
 
+# Add gem Devise - which is used for authentification 
+
+gem 'devise'
+
+
 # Setting my Ruby Version 
 ruby '2.1.5'
 

@@ -39,6 +39,11 @@ class ProductsController < ApplicationController
   def edit
   end
 
+  # Make sure that users need to login before they can see the products page
+  before_filter :authenticate_user!
+
+
+
   # POST /products
   # POST /products.json
   def create
