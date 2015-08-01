@@ -4,7 +4,7 @@ class ProductsController < ApplicationController
   # this is a comment 
   # GET /products
   # GET /products.json
-  
+  # added some comments to see if the branch thing works 
  
 # code for entering the search field 
   def index
