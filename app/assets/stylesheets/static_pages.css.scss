@@ -108,6 +108,46 @@ footer {
 margin:auto;
 }
 
+
+#twitter-widget-0{
+	margin-top: 20px;
+	margin-right: 5px;
+	float: right;
+}
+
+
+/*table for about sections starts here */
+
+table{
+	
+	margin-top: 30px;
+	font-size: 2em;
+	color: black;
+	font-family: Quicksand, Helvetica, sans-serif;
+	width: 100%;
+}
+
+table th:hover{
+	color: #f00;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: color 900ms;
+}
+
+table, th, td {
+   border: 1px solid black;
+}
+
+.my-row th {
+	padding: 20px;
+}
+
+.my-row td {
+	padding: 20px;
+}
+
+/*table for about sections ends here */
+
 /*Typography*/
 
 h1,

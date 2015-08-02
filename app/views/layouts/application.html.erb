@@ -11,10 +11,29 @@
 	  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 	  <%= csrf_meta_tags %>
+
+<!--Twitter Starts Here-->
+    <script>
+        ! function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0],
+                p = /^http:/.test(d.location) ? 'http' : 'https';
+            if (!d.getElementById(id)) {
+                js = d.createElement(s);
+                js.id = id;
+                js.src = p + '://platform.twitter.com/widgets.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }
+        }(document, 'script', 'twitter-wjs');
+    </script>
+    <!--Twitter ends here-->
+
 	</head>
 	
 	<body>
-	 <!--navbar starts here-->
+
+    <!--Add Flash Notice Tags - the block will display a welcoming message when you are signing in -->
+        
+   	 <!--navbar starts here-->
     <nav>
         <div class="navbar navbar-inverse navbar-fixed-top" role "Navigation" id="navbar">
             <div class="container-fluid">
@@ -26,7 +45,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <div class="projectName">
-                        <a href="#">ALOAH INC</a>
+                        <a href="#">ALOAH SURF</a>
                     </div>
                     <div class="search">
                     <%= form_tag("/products", method: "get") do %>
@@ -37,37 +56,46 @@
                     </div><!--Search Functions ends here-->
                 </div>
                 <!--end navbar-header-->
-
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><%= link_to "Home", static_pages_landing_page_path %></li>
                         <li><%= link_to "Products", products_path %></li>
                         <li><%= link_to "About", static_pages_about_path %></li>
-                        <li><%= link_to "Contact", static_pages_contact_path %></li>
-                    </ul>
-                </div>
+                        <li><%= link_to "Contact", static_pages_contact_path %></li>       <!-- add login and logout button for user-->
+                        <% if user_signed_in? %>
+                          <li>
+                          <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>        
+                          </li>
+                        <% else %>
+                          <li>
+                          <%= link_to('Login', new_user_session_path)  %>  
+                          </li>
+                        <% end %>
+                    </ul>               
+                  </div>
                 <!--end navbar-collapse-->
             </div>
             <!--end container fluid-->
+           
         </div>
         <!--end navbar-->
     </nav>
     <!--Navbar ends here-->
-		
-	<%= image_tag("strand2.jpg") %>
 
-	       <div class="container fluid">
-			<h1>HAWAIAAN SURFBOARDS</h1>
-			<h2>Customized Boards</h2>
-		  </div><!--end container fluid-->
 
+	<%= image_tag("beach.jpg") %>
+
+	 
 		 	
 <%= yield %>
 
 	<footer>
 		<div class="copyright">
-	    	<p>&copy; 2015 Christoph Alexander Schenek | All rights Reserved</p>
-	    </div>
+	    <p>&copy; 2015 Christoph Alexander Schenek | All rights Reserved</p>
+	   </div>
+    <div class="twitter">
+      <a href="https://twitter.com/Christoph1989" class="twitter-follow-button" data-show-count="false">Follow @Christoph1989</a>
+    </div>
 	</footer>
 
 	</body>
