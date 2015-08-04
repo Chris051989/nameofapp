@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
-  
   devise_for :users
+ 
+ resources :products do 
+    resources :comments
+  end
   resources :users
-
-  resources :products
 
   get 'static_pages/about'
 
@@ -27,6 +28,10 @@ Rails.application.routes.draw do
 
   # Include Routes for Orders 
   resources :orders, only: [:index, :show, :new, :create]
+
+
+
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
