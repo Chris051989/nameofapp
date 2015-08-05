@@ -6,68 +6,7 @@
 
 /*Navbar starts here*/
 
-.navbar{
-	background-color: black;
-	width: 100%;
-	position: fixed;
-	top: 0;
-	height: 60px;
-	opacity: 0.7;
-	z-index: 1;
-	float: right;
-}
-	
-.navbar li{
-	opacity: 0.6;
-	padding-top: 10px;
-	color: white;
-	text-transform: uppercase;
-	letter-spacing: 0.05em;
-	transition: color 900ms;
-	font-size: 2em;
-	}
 
-.navbar li a{
-	color: white;
-	text-transform: uppercase;
-	letter-spacing: 0.05em;
-	transition: color 900ms;
-}
-
-.navbar a:hover{
-	color: #f00;
-	text-decoration: none;
-}
-
-@media only screen and (max-width: 766px) {
-	.collapsing, .in {background-color: #B0B0B0;}
-	.collapsing ul li a, .in ul li a {color: #000000!important;}
-	.collapsing ul li a:hover, .in ul li a:hover {color: #A00000!important;}
-}
-
-.nav{
-	float: right;
-	padding-right: 20px;
-	padding-top: 0px;
-}
-
-.projectName{
-	text-transform: uppercase;
-	font-size: 16px;
-	padding-top: 20px;
-	font-size: 2em;
-}
-
-.projectName a{
-	color: white;
-	float: left;
-	padding-left: 10px;
-}
-
-.search {
-	padding-left:10px;
-	margin-top: 60px;
-}
 
 .newform{
 text-align:center;
@@ -123,55 +62,4 @@ table, th, td {
 }
 
 /*table for about sections ends here */
-
-
-/*footer starts here */
-
-footer {
-	background-color: black;
-	width: 100%;
-	position: relative;
-	bottom: 0;
-	height: 70px;
-	opacity: 0.7;
-	z-index: 1;
-	font-size: 1em;
-	display: block;
-	}
-
-.copyright {
-	padding-top: 20px;
-	padding-left: 20px;
-	float: left;
-	position: absolute;
-}
-
-
-#twitter-widget-0{
-	margin-top: 20px;
-	margin-right: 5px;
-	float: right;
-}
-
-
-
-
-
-
-/*Typography*/
-
-h1,
-h2,
-h3 {
-	font-family: Quicksand, Helvetica, sans-serif;
-}
- 
-p,
-a,
-li {
- 	font-family: Crimson Text, Palatino, serif;
- }
-
-/*Typography ends here*/
-
 
