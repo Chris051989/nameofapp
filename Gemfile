@@ -58,6 +58,10 @@ gem 'devise'
 
 gem 'cancancan'
 
+# Add pagination which will display user reviews on different pages 
+
+gem 'will_paginate', '~> 3.0.6' 
+
 # Setting my Ruby Version 
 ruby '2.1.5'
 
