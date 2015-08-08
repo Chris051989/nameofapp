@@ -84,12 +84,12 @@
     </nav>
     <!--Navbar ends here-->
 
+    <%= image_tag("beach.jpg") %>
 
-	<%= image_tag("beach.jpg") %>
-
-	 <div class="page-content">
-<%= yield %>
-</div>
+		 <div class="page-content">
+         <!-- check again what yield actually does here - seems to refer to all the element in the different static pages-->
+           <%= yield %>
+    </div>
 
 	<footer>
 		<div class="copyright">
