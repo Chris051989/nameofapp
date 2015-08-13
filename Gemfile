@@ -65,5 +65,8 @@ gem 'will_paginate', '~> 3.0.6'
 # Setting my Ruby Version 
 ruby '2.1.5'
 
-
+# Adding Rspec Rails for testing
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0'
+end
 
