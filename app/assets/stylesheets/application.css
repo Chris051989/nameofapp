@@ -76,6 +76,53 @@ text-align:center;
 
 /*Navbar ends here*/
 
+.subnav{
+	background-color: #888888;
+	width: 100%;
+	height: 50px;
+	opacity: 0.6;
+	z-index: 1;
+	margin-top: 80px;
+	display: block;
+	text-align: right;
+
+	
+}
+.subnav li{
+	opacity: 0.6;
+	padding-top: 10px;
+	color: black;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	transition: color 900ms;
+	font-size: 1em;
+	margin-bottom: 20px;
+	
+	}
+
+.subnav li a{
+	color: #000000;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	transition: color 900ms;
+	text-align: right;
+	float: right;
+		}
+
+.subnav a:hover{
+	color: #f00;
+	text-decoration: none;
+}
+
+#Search{
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+
+}
+
+
+
+
 h1 {
 font-size: 3em;
 color: black;
@@ -138,6 +185,10 @@ table, th, td {
 
 
 
+
+
+
+
 /*footer starts here */
 
 footer {
@@ -150,8 +201,8 @@ footer {
 	opacity: 0.7;
 	z-index: 1;
 	font-size: 1em;
-	display: block;
-	}
+	display: block;	
+}
 
 .copyright {
 	padding-top: 20px;
