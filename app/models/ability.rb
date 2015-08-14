@@ -8,8 +8,9 @@ class Ability
     else
     can :manage, User, id: user.id
   end
-      
-end
+end 
+end      
+
 
 
     # Define abilities for the passed in user here. For example:
