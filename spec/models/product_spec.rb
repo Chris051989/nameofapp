@@ -2,7 +2,6 @@
 
 require 'rails_helper'
 
-
 # Describe specifies the class that I will test. In this case, this is the class products. 
 
 describe Product do
@@ -20,7 +19,8 @@ context "only name present" do
 # with the context section, we do have a so-called before block 
 # we will run the before block before each test in the context 
 # to set up any data we need might need in the test. 
-		before {@product = build(:product)}
+
+		before { @product = Product.new(name: "Monster", description: "Nice", colour: "Blue", price: "300",)}
 
 # the it block contains the different individual test 
 # in the case below, we expect that the product name will be returned, 
@@ -30,49 +30,53 @@ context "only name present" do
 		end
 	end
 
-
-
 # here another before section starts which sets up data for the variables
 # product and comment  
 
-	before(:all) do
-		@product = build(:product_full_profile)
-		@comment = build(:comment)
+	before { @product = Product.new(name: "Monster", description: "Nice", colour: "Blue", price: "300",)}
+	
 		
-
 # here the second context starts 
-	context "name, colour, price present" do
+	context "name, description, colour, price present" do
 
 		it "returns name" do
 			expect(@product.name).to eq "Monster"
 		end
 
+		it "returns description" do
+			expect(@product.description).to eq "Nice"
+		end
+
 		it "returns colour" do
-			expect(@product.colour).to eq "Yellow"
+			expect(@product.colour).to eq "Blue"
 		end
 
 		it "returns price" do
-			expect(@product.price).to eq "500"
+			expect(@product.price).to eq "300"
 		end
 
 	end
 
 # third context for the comment section starts here 
+	
+before { @comment = Comment.new(body: "Comment", rating: "4")}
+
 	context "comment present" do
 
 # it returns the written rating, which should equal something like 
-# Nice Product S	
+# Nice Product	
 		it "returns comment body" do
-			expect(@comment.body).to eq "Nice Product"
+			expect(@comment.body).to eq "Comment"
 		end
 
 # we test for the return of a comment rating that equals a numerical value 
 		it "returns comment rating" do
 			expect(@comment.rating).to eq 4
 		end
-
-	
 	end
 end
-end
+
+
+
+
 
