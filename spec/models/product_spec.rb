@@ -14,7 +14,7 @@ describe Product do
 # in this test, we do have three different sets of context 
 # 1. context "only name present" 2. context "name, colour, price present" 3.context "Comment present"
 
-context "only name present" do
+context "only product name present" do
 
 # with the context section, we do have a so-called before block 
 # we will run the before block before each test in the context 
@@ -53,25 +53,6 @@ context "only name present" do
 
 		it "returns price" do
 			expect(@product.price).to eq "300"
-		end
-
-	end
-
-# third context for the comment section starts here 
-	
-before { @comment = Comment.new(body: "Comment", rating: "4")}
-
-	context "comment present" do
-
-# it returns the written rating, which should equal something like 
-# Nice Product	
-		it "returns comment body" do
-			expect(@comment.body).to eq "Comment"
-		end
-
-# we test for the return of a comment rating that equals a numerical value 
-		it "returns comment rating" do
-			expect(@comment.rating).to eq 4
 		end
 	end
 end
