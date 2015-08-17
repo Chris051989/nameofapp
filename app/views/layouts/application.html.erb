@@ -35,7 +35,6 @@
     <!--Add Flash Notice Tags - the block will display a welcoming message when you are signing in -->
 
 
-
      <!--navbar starts here-->
     <nav>
         <div class="navbar navbar-inverse navbar-fixed-top" role "Navigation" id="navbar">
@@ -78,6 +77,14 @@
                                     <%= link_to('Login', new_user_session_path)  %>
                                 </li>
                                 <% end %>
+                                  <div class="search" id="Search">
+            <%= form_tag("/products", method: "get") do %>
+                <%= label_tag(:q, "Search for:") %>
+                    <%= text_field_tag(:q) %>
+                        <%= submit_tag("Search") %>
+                            <% end %>
+        </div>
+
                     </ul>
                 </div>
                 <!--end navbar-collapse-->
@@ -91,14 +98,7 @@
 
 <!-- Search Function starts here-->
 
-          <div class="search" id="Search">
-            <%= form_tag("/products", method: "get") do %>
-                <%= label_tag(:q, "Search for:") %>
-                    <%= text_field_tag(:q) %>
-                        <%= submit_tag("Search") %>
-                            <% end %>
-        </div>
-
+        
         <!--Search Functions ends here-->
     <div class="subnav">
         <ul class="nav navbar-nav">
