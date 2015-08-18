@@ -19,7 +19,7 @@ describe User do
 		before { @user = build(:user)}
 	
 		it "should validate email" do
-				expect(@user).to be valid
+				expect(@user).to be_valid
 		end	
 end
 
