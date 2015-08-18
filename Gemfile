@@ -72,3 +72,15 @@ end
 # Adding Factory Girl for running tests 
 gem "factory_girl_rails", "~> 4.0"
 
+# Add Guard rspec to ypur gemfile 
+gem 'guard-rspec', require: false
+
+
+# Add gem spork-rails to your app 
+gem 'spork-rails'
+
+# (Since spork-rails depends on spork, it is not necessary to put both spork and spork-rails in your Gemfile)
+# Add Gem sport to your Gemfile 
+group :development do
+  gem 'guard-spork'
+end
