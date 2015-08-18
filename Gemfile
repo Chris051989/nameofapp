@@ -69,4 +69,6 @@ ruby '2.1.5'
 group :development, :test do
   gem 'rspec-rails', '~> 3.0'
 end
+# Adding Factory Girl for running tests 
+gem "factory_girl_rails", "~> 4.0"
 

@@ -2,16 +2,12 @@ require 'rails_helper'
 
 describe Comment do
 
-context "comment and rating present" do
+context "comment present" do
 
-	before { @comment = Comment.new(body: "Comment", rating: "4")}
+	before { @comment = build(:comment)}
 
 		it "returns comment body" do
-					expect(@comment.body).to eq "Comment"
-				end
-
-		it "returns comment rating" do
-					expect(@comment.rating).to eq 4
+					expect(@comment.body).to eq "comment"
 				end
 		end	
 end

@@ -4,8 +4,8 @@ describe ProductsController, :type => :controller do
 
 before do 
 	# an der Stelle erschaffe ich auch automatisch eine ID
-	@user = User.create(email: "christoph.schenek@gmail.com", password: "golgolgol")
-	@product = Product.create(name: "Monster", description: "Nice", colour: "Blue", price: "300")
+	@user = create(:user)
+	@product = create(:product)
 end 
 
 describe "GET #index" do 
@@ -26,7 +26,6 @@ describe "GET #index" do
 		end
 end
 
-
 describe "GET #show" do 
 	before do
 		sign_in @user 
@@ -41,3 +40,5 @@ describe "GET #show" do
 		end
   	end
 end
+
+

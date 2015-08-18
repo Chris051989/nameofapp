@@ -20,12 +20,12 @@ context "only product name present" do
 # we will run the before block before each test in the context 
 # to set up any data we need might need in the test. 
 
-		before { @product = Product.new(name: "Monster", description: "Nice", colour: "Blue", price: "300",)}
+		before { @product = build(:product)}
 
 # the it block contains the different individual test 
 # in the case below, we expect that the product name will be returned, 
 # and that the product name is expected to equal somethin like Monster
-		it "returns product name" do
+		it "returns only product name" do
 		expect(@product.name).to eq "Monster" 
 		end
 	end
@@ -33,8 +33,10 @@ context "only product name present" do
 # here another before section starts which sets up data for the variables
 # product and comment  
 
-	before { @product = Product.new(name: "Monster", description: "Nice", colour: "Blue", price: "300",)}
-	
+	before(:all) do
+		@product = build(:product_full_profile)
+		@comment = build(:comment)
+	end
 		
 # here the second context starts 
 	context "name, description, colour, price present" do
@@ -53,6 +55,17 @@ context "only product name present" do
 
 		it "returns price" do
 			expect(@product.price).to eq "300"
+		end
+	end
+
+	context "comment present" do
+		
+		it "returns comment body" do
+			expect(@comment.body).to eq "comment"
+		end
+
+		it "returns comment rating" do
+			expect(@comment.rating).to eq 2
 		end
 	end
 end
