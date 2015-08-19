@@ -79,6 +79,12 @@ gem 'guard-rspec', require: false
 # Add gem spork-rails to your app 
 gem 'spork-rails'
 
+
+# Adding the stripe gem to my file 
+
+gem 'stripe'
+
+
 # (Since spork-rails depends on spork, it is not necessary to put both spork and spork-rails in your Gemfile)
 # Add Gem sport to your Gemfile 
 group :development do
