@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
 
   post 'payments/create'
+  
 
   devise_for :users
  
@@ -32,8 +33,6 @@ Rails.application.routes.draw do
 
   # Include Routes for Orders 
   resources :orders, only: [:index, :show, :new, :create]
-
-
 
 
 

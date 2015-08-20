@@ -16,9 +16,13 @@ def create
     # The card has been declined
   end
 
+redirect_to product_path(@product)
   end
 
-  redirect_to product_path(@product)
+  @order = Order.new(:user_id => params[:userID], :product_id => params[:productID], :total => params[:productPrice])
+  @order.save
+  
+
 end
 
 

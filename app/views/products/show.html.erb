@@ -15,10 +15,20 @@
   <%= @product.description %>
 </p>
 
-<p>
-  <strong>Image url:</strong>
-  <%= @product.image_url %>
-</p>
+
+<div class="container" id="image">
+   <div class="row">
+    <div class="col-md-6 col-xs-12">
+    <p>
+    <strong>Image url:</strong>
+    <%= image_tag @product.image_url %>
+    </p>
+   </div> 
+  </div>
+</div>
+
+
+
 
 <p>
   <strong>Colour:</strong>
