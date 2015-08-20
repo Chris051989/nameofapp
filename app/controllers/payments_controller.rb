@@ -1,4 +1,4 @@
-class PaymentsdController < ApplicationController
+class PaymentsController < ApplicationController
 
 def create
   token = params[:stripeToken]
