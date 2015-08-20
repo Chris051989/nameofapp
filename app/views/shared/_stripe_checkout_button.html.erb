@@ -6,3 +6,10 @@
 	data-description="<%= @product.description %>">
 	
  </script>
+
+ <input type="hidden" name="productName" value="<%=@product.name%>">
+ <input type="hidden" name="productPrice" value="<%=@product.price%>">
+ <input type="hidden" name="ProductID" value="<%=@product.id%>">
+ <input type="hidden" name="UserID" value= "<% :current:User %>">
+
+

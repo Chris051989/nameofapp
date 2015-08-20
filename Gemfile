@@ -84,7 +84,6 @@ gem 'spork-rails'
 
 gem 'stripe'
 
-
 # (Since spork-rails depends on spork, it is not necessary to put both spork and spork-rails in your Gemfile)
 # Add Gem sport to your Gemfile 
 group :development do
