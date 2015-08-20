@@ -4,9 +4,9 @@ def create
   begin
     charge = Stripe::Charge.create(
       :amount => params[:productPrice] # charge the amount according to the user ID
-      :currency => "eur",
+      :currency => "usd",
       :source => token,
-      :description => params[:stripeEmail]
+      :description => "New Order: #{params[:productName]} from #{params[:stripeEmail]}."
     )
   rescue Stripe::CardError => e
     # The card has been declined
