@@ -87,11 +87,11 @@ gem 'stripe'
 
 # Adding the byebug gem 
 
-gem 'byebug'
 
 
 # (Since spork-rails depends on spork, it is not necessary to put both spork and spork-rails in your Gemfile)
 # Add Gem sport to your Gemfile 
 group :development do
-  gem 'guard-spork'
+  gem 'guard-spork'  
+	gem 'byebug'
 end
