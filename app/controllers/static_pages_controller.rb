@@ -20,6 +20,8 @@ class StaticPagesController < ApplicationController
 	def contact
 	end
 
+	byebug
+
 def thank_you
   @name = params[:name]
   @email = params[:email]

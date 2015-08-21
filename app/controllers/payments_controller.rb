@@ -19,10 +19,6 @@ def create
 redirect_to product_path(@product)
   end
 
-  @order = Order.new(:user_id => params[:userID], :product_id => params[:productID], :total => params[:productPrice])
-  @order.save
-  
-
-end
+  end
 
 
