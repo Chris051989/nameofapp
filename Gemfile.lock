@@ -30,7 +30,8 @@ GEM
     arel (5.0.1.20140414130214)
     bcrypt (3.1.10-x86-mingw32)
     builder (3.2.2)
-   cancancan (1.12.0)
+    byebug (6.0.2)
+    cancancan (1.12.0)
     childprocess (0.5.6)
       ffi (~> 1.0, >= 1.0.11)
     coderay (1.1.0)
@@ -224,6 +225,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  byebug
   cancancan
   coffee-rails (~> 4.0.0)
   coffee-script-source (= 1.8.0)

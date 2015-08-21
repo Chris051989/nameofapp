@@ -9,8 +9,12 @@ class StaticPagesController < ApplicationController
 		# Define Counter Variable which is needed for automatically adopting the number of buttons to the number of slides on the landing page
   		@counter = Product.count	
     	@product = Product.new
+
+    byebug
+    	
 	end 
 
+	
 	def index
 	end
 
@@ -20,7 +24,6 @@ class StaticPagesController < ApplicationController
 	def contact
 	end
 
-byebug
 
 def thank_you
   @name = params[:name]
