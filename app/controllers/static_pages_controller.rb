@@ -10,8 +10,7 @@ class StaticPagesController < ApplicationController
   		@counter = Product.count	
     	@product = Product.new
 
-    byebug
-    	
+      	
 	end 
 
 	

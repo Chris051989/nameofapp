@@ -89,5 +89,5 @@ gem 'stripe'
 # Add Gem sport to your Gemfile 
 group :development do
   gem 'guard-spork'  
-	gem 'byebug'
+	gem 'byebug', '~> 3.5.1'
 end
