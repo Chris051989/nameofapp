@@ -10,10 +10,12 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
         <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+               
+     
         <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
             <%= csrf_meta_tags %>
 
-                <!--Twitter Starts Here-->
+                      <!--Twitter Starts Here-->
                 <script>
                     ! function(d, s, id) {
                         var js, fjs = d.getElementsByTagName(s)[0],
@@ -27,6 +29,8 @@
                     }(document, 'script', 'twitter-wjs');
                 </script>
                 <!--Twitter ends here-->
+
+          
 
 </head>
 
@@ -116,11 +120,10 @@
 
     <!--sub nav ends here-->
 
-   
 
     <!-- check again what yield actually does here - seems to refer to all the element in the different static pages-->
     <%= yield %>
-        </div>
+       
 
 
         <footer>

@@ -84,7 +84,7 @@ gem 'spork-rails'
 
 gem 'stripe'
 
-# Brakeman
+# Install Brakeman - A Rails security scanner
  	gem 'brakeman', :require => false
 
 
