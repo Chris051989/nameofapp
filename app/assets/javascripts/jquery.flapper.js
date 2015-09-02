@@ -1,4 +1,3 @@
-<scriptlanguage="javascript">
 $(document).ready(function(){
 var$header_display=$('#header_display');
 $header_display.flapper({
@@ -20,4 +19,3 @@ toggle=!toggle;
 },1000);
 
 });
-</script>
