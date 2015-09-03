@@ -138,6 +138,99 @@ text-align: center;
 
 
 
+ 1.3. Carousel */
+
+
+.headline {
+	padding-bottom: 40px;
+	font-size: 16px;
+}
+
+.carousel-caption {
+	padding-bottom: 240px;
+	font-family: Quicksand;
+	font-size: 2em;
+	color: #FFFF;
+}
+
+
+/*Header Carousel*/
+.item h3{
+	padding-bottom: 10px;
+	font-size: 3em;
+}	
+
+#header h1 {margin-bottom: 300px !important;}
+
+
+/*Text Carousel*/
+.item p{
+	padding-top: 10px;
+	padding-bottom: 80px;
+	font-size: 2em;
+}
+/*Carousel Ends here*/
+
+
+
+
+
+#team {
+	background-color: #334C00;
+	opacity: 0.6;
+	/*Add a background image*/
+	background-attachment: fixed;
+	/* Give the background a fixed position so it does not scroll when you scroll*/
+	background-size: cover;
+	/* Have the background cover the entire div section*/
+	color: white;
+	/* Change the color of the text on top so it is readable, and adjust the padding as needed*/
+	margin-top: 50px;
+	padding-top: 50px;
+	margin-top: 50px;
+	opacity: 0.8;
+	height: 700px;
+	font-size: 1em;
+}
+
+#team1 {
+	background-color: white;
+	padding-top: 50px;
+	margin-top: 30px;
+	margin-bottom: 40px;
+	bottom: 30px;
+	opacity: 0.95;
+	text-align: center;
+	color: black;
+	height: 550px;
+}
+
+#team1 h1 {	
+	text-align: center;
+	font-family: Quicksand;
+	padding-bottom: 20px;
+	margin-top: -10px;
+
+}
+
+#team1 h2 {	
+	font-family: Quicksand;
+	margin-top: -25px;
+}
+
+#team1 p {	
+	font-family: Quicksand;
+
+}
+
+
+
+
+
+
+
+
+
 /*table for about sections starts here */
 
 table{
@@ -188,40 +281,82 @@ table, th, td {
 
 
 
-
-
-/*footer starts here */
+/*7. FOOTER*------------------------------------
+------------------------------*/
 
 footer {
-	background-color: black;
-	width: 100%;
-	margin: 0 auto;
-	position: relative;
-	bottom: 0;
-	height: 70px;
-	opacity: 0.7;
-	z-index: 1;
-	font-size: 1em;
-	display: block;	
+  background-color: rgb(87, 88, 91);
+  margin-top: 20px;
+ }
+
+.footer--row {
+  margin-left: 0;
+  margin-right: 0;
+  width: 93%;
+  margin: 0 auto;
+}
+
+.footer--columns {
+  padding: 0 1% 5px;
+  overflow: hidden;
+  color: white;
+}
+  
+.columns--readmore{
+	color: blue;
+}
+
+.icon-email, {
+  vertical-align: sub;
+}
+
+.columns--social-buttons a {
+  font-size: 35px;
+  padding-right: 5px;
+  color: blue;
+}
+
+.zu-logo {
+  background: url(../img/zu_logo_white.png) no-repeat center;
+  background-size: cover;
+  width: 115px;
+  height: 30px;
+  margin: 30px 0;
+  overflow: hidden;
 }
 
 .copyright {
-	padding-top: 20px;
-	padding-left: 450px;
-	text-align: center;
-	position: absolute;
-	font-size: 1.5em;
+	background-color: rgb(87, 88, 91);
+  width: 90%;
+  margin: 5px auto 0px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  text-align: center;
+  font-family: Quicksand;
+  color: white;
 }
 
-#twitter-widget-0{
+@media (min-width: 992px) {
+  .footer--row {
+    width: 82%;
+    margin: 0 auto;
+  }
+
+.twitter{
 	margin-top: 20px;
-	margin-right: 5px;
-	float: right;
-
+	margin-left: 5px;
+	float: left;
 }
 
+.fb-like{	
+		float: left;
+		margin-top: 30px;
+		margin-right: 5px;		
+}
 
-/* footer ends here/*
+/*footer ends here */
 
 
 /*Typography*/
